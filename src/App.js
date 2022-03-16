@@ -1,23 +1,45 @@
-import logo from './logo.svg';
+import React, { useState } from "react";
+import Header from "./components/headers/header";
+import Footer from "./components/footer";
+import { Page1, Page2, Page3, Page4, Page5, Page6 } from './pages'
 import './App.css';
 
-function App() {
+
+const App = () => {
+
+  const [page, setPage] = useState(0)
+  let pagina = <Page1 />
+
+  switch (page) {
+    case 0:
+      pagina = <Page1 />;
+      break;
+    case 1:
+      pagina = <Page2 />;
+      break;
+    case 2:
+      pagina = <Page3 />;
+      break;
+    case 3:
+      pagina = <Page4 />;
+      break;
+    case 4:
+      pagina = <Page5 />;
+      break;
+    case 5:
+      pagina = <Page6 />;
+      break;
+
+
+    default:
+      pagina = <Page1 />;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header page={page} setPage={setPage} />
+      {pagina}
+      <Footer />
     </div>
   );
 }

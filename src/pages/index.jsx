@@ -1,0 +1,6 @@
+export { default as Page1 } from './page-1'
+export { default as Page2 } from './page-2'
+export { default as Page3 } from './page-3'
+export { default as Page4 } from './page-4'
+export { default as Page5 } from './page-5'
+export { default as Page6 } from './page-6'
