@@ -19,12 +19,12 @@ const AtendenceTabs = () => {
         {
             icon: (<AttachMoneyIcon htmlColor='#336933' />),
             title: 'Financeiro',
-            text: "Solicitar 2a via de boleto.<br> <a href='mailto:contato@santarosatransporte.com.br'>contato@santarosatransporte.com.br</a>",
+            text: "Solicitar 2a via de boleto.<br> <a href='mailto:financeiro@santarosatransporte.com.br'>financeiro@santarosatransporte.com.br</a>",
         },
         {
             icon: (<PeopleIcon htmlColor='#336933' />),
             title: 'Assuntos Gerais',
-            text: 'Dúvidas sobre tarifas e demais serviços ou solicitações (dias úteis) <br> Escritório: 21 3262-7672 | 21 99981-6384 | 21 99981-9457 | 21 99997-2771',
+            text: 'Dúvidas sobre tarifas e demais serviços ou solicitações (dias úteis) <br> Escritório: 21 3262-7672 | 21 99981-9457 | 21 99997-2771',
         }
 
     ]

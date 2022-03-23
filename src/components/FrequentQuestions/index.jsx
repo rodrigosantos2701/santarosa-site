@@ -16,7 +16,7 @@ export const ImportantQuestions = () => {
         },
         {
             question: 'Quais os bairros atendidos?',
-            answer: 'Atendemos as instituições Escola Parque (Barra e Gávea, com os serviços Expresso para a unidade Gávea), Escola Americana (Barra e Gávea), Colégio Santo Agostinho, Liceu Franco Brasileiro, British School e Escola Alemã (passeios), além de oferecer outros serviços de transporte para eventos, passeios e ponto a ponto entre suas unidades.',
+            answer: 'Atendemos as instituições Escola Parque (Barra e Gávea, com os serviços Expresso para a unidade Gávea), Escola Americana (Barra e Gávea),  British School , além de oferecer outros serviços de transporte para eventos, passeios e ponto a ponto entre suas unidades.',
             close: 'true'
         },
         {

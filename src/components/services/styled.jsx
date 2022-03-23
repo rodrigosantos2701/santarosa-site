@@ -12,6 +12,7 @@ export const ContainerServices = styled.div`
     display: flex;
     flex-direction: column;
     padding: 1% 5%;
+    align-items: center;
 `;
 
 export const TitleServices = styled.text`
