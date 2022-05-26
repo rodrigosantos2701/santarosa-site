@@ -24,7 +24,7 @@ const AtendenceTabs = () => {
         {
             icon: (<PeopleIcon htmlColor='#336933' />),
             title: 'Assuntos Gerais',
-            text: 'Dúvidas sobre tarifas e demais serviços ou solicitações (dias úteis) <br> Escritório: 21 3262-7672 | 21 99981-9457 | 21 99997-2771',
+            text: 'Dúvidas sobre tarifas e demais serviços ou solicitações (dias úteis) <br> Escritório: 21 3150-3135 | 21 99981-9457 | 21 99997-2771',
         }
 
     ]

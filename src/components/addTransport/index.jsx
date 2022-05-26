@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ContainerForm } from './styled';
 import MenuItem from '@material-ui/core/MenuItem';
 import TextField from '@material-ui/core/TextField';
@@ -20,6 +20,7 @@ import emailjs from '@emailjs/browser';
 export const AddTransport = () => {
 
     const form = useRef();
+    const [isSend, setIsSend] = useState(false)
     const [aluno, setAluno] = useState([
         {
             name: "",
@@ -68,13 +69,21 @@ export const AddTransport = () => {
 
         emailjs.sendForm('service_djxar99', 'template_p3my7rf', form.current, 'gbjikoeEs9PAACR9W')
             .then((result) => {
-                console.log(result.text);
+               setIsSend(true);
             }, (error) => {
                 console.log(error.text);
             });
     };
 
     const isMobile = window.screen.width < 1024
+
+    
+
+    useEffect(()=> {
+        setTimeout(() => {
+            setIsSend(false)
+          }, "3000")
+        }, [sendEmail])
 
     return (
         <ContainerForm >
@@ -101,8 +110,10 @@ export const AddTransport = () => {
                         >
                             <option value='' >Escolha Escola</option>
                             <option value={'escola parque'} >Escola Parque</option>
+                            <option value={'escola suiço-brasileira'} >Escola Suiço-Brasileira</option>
                             <option value={'escola Americana'}>Escola Americana</option>
                             <option value={'CSI'}>Colegio Santo Inacio</option>
+                            <option value={'SAP'}>Escola SAP</option>
                         </Select>
                     </Grid>
                 </div>
@@ -119,7 +130,11 @@ export const AddTransport = () => {
                                 value={responsavel.nome}
                                 onChange={event => setResponsavel({ nome: event.target.value })}
                                 fullWidth
-                                variant="outlined" />
+                                variant="outlined"
+                                InputLabelProps={{
+                                    shrink: true,
+                                  }}
+                               />
                         </Grid>
                         <Grid item xs={12} lg={3} md={3}>
                             <TextField
@@ -128,6 +143,10 @@ export const AddTransport = () => {
                                 value={responsavel.cpf}
                                 onChange={event => setResponsavel({ cpf: event.target.value })}
                                 fullWidth
+                                InputLabelProps={{
+                                    shrink: true,
+                                  }}
+
                                 variant="outlined" />
                         </Grid>
                         <Grid item xs={12} lg={3} md={3}>
@@ -137,15 +156,23 @@ export const AddTransport = () => {
                                 value={responsavel.email}
                                 onChange={event => setResponsavel({ email: event.target.value })}
                                 fullWidth
+                                InputLabelProps={{
+                                    shrink: true,
+                                  }}
+
                                 variant="outlined" />
                         </Grid>
                         <Grid item xs={12} lg={3} md={3}>
                             <TextField
                                 name="celular"
                                 label="Telefone Celular"
-                                value={responsavel.cpf}
+                                value={responsavel.celular}
                                 onChange={event => setResponsavel({ celular: event.target.value })}
                                 fullWidth
+                                InputLabelProps={{
+                                    shrink: true,
+                                  }}
+
                                 variant="outlined" />
                         </Grid>
 
@@ -167,15 +194,23 @@ export const AddTransport = () => {
                                 value={endereco.end} ß
                                 onChange={event => setEndereco({ end: event.target.value })}
                                 fullWidth
+                                InputLabelProps={{
+                                    shrink: true,
+                                  }}
+
                                 variant="outlined" />
                         </Grid>
                         <Grid item xs={12} lg={2} md={2}>
                             <TextField
                                 name="cep"
                                 label="CEP"
-                                value={endereco.end} ß
+                                value={endereco.cep} ß
                                 onChange={event => setEndereco({ cep: event.target.value })}
                                 fullWidth
+                                InputLabelProps={{
+                                    shrink: true,
+                                  }}
+
                                 variant="outlined" />
                         </Grid>
 
@@ -195,6 +230,10 @@ export const AddTransport = () => {
                             value={obs}
                             onChange={event => setObs(event.target.value)}
                             fullWidth
+                            InputLabelProps={{
+                                shrink: true,
+                              }}
+
                             variant="outlined" />
                     </Grid>
                 </div>
@@ -316,8 +355,10 @@ export const AddTransport = () => {
                     </Grid>
                 )}
                 {/* ____________ */}
+
                 <div style={{padding: '10px', display:'flex', justifyContent: 'end'}}>
-                    <Button variant="contained" color="primary" size="large" type="submit" value="Send" >Enviar </Button>
+                    {isSend?<div style={{padding: '10px'}}>Enviado com sucesso!</div>:''}
+                    <Button disabled={isSend} variant="contained" color="primary" size="large" type="submit" value="Send" >Enviar </Button>
                 </div>
             </form>
         </ContainerForm>

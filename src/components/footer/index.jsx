@@ -23,7 +23,7 @@ const Footer = () => {
       <Section color='#336933'>
         <div style={{ display: 'flex', justifyContent: 'center',textAlign: 'center', color: '#fff', width: '90%' }}>
           Localização
-          Rua Ceara, 336 - Praça da Bandeira Rio de Janeiro - RJ - Brasil CEP: 20270-160 Office: 21 3262-7672
+          Rua Ceara, 336 - Praça da Bandeira Rio de Janeiro - RJ - Brasil CEP: 20270-160 Office: 21 3150-3135
         </div>
         <CopyRight />
       </Section>
