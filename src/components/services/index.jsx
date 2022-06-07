@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Section, ContainerServices, TitleServices, TitleCommentServices } from './styled'
+import { Section, ContainerServices, TitleServices, TitleCommentServices, ContainerServicesIsMobile } from './styled'
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Service from './service';
@@ -9,6 +9,8 @@ import LogoCSI from '../../images/csi.png';
 import Contract from '../../images/Contrato-Escolas-2020.pdf'
 import Earj from '../../images/earj.png'
 
+
+const isMobile = window.screen.width < 1024
 
 
 const ServicesTab = (props) => {
@@ -113,8 +115,23 @@ const ServicesTab = (props) => {
                     <TitleCommentServices>{content.comment}</TitleCommentServices>
                 </ContainerServices>
             </Section>
-            <ContainerServices style={{ padding: '20px', display: 'contents', flexDirection: 'column', alignItems: 'center', width: '80%'}}>
-                <Tabs value={value} indicatorColor="primary" textColor="primary" onChange={handleChange} style={{marginLeft: '10%'}} >
+            {isMobile?
+            <ContainerServicesIsMobile style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '80%'}}>
+                <Tabs display={'flex'}  variant="scrollable"  flexDirection={'column'} value={value} indicatorColor="primary" textColor="primary" onChange={handleChange} style={{marginLeft: '10%'}} >
+                    <Tab textAlign={'center'} label="Expresso Parque" />
+                    <Tab textAlign={'center'} label="horário extenso Escola Parque - Gávea)" />
+                    <Tab textAlign={'center'} label="Expresso Santo Inácio" />
+                    <Tab textAlign={'center'} label="After School Escola Americana" />
+
+                </Tabs>
+                {value === 0 && <Service content={EscolaParque} ></Service>}
+                {value === 1 && <Service content={HorarioExtensoEscolaParque} ></Service>}
+                {value === 2 && <Service content={EscolaCSI} ></Service>}
+                {value === 3 && <Service content={AfterSchool} ></Service>}
+            </ContainerServicesIsMobile>
+:
+            <ContainerServices style={{ padding: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '80%'}}>
+                <Tabs flexDirection={'column'}  value={value} indicatorColor="primary" textColor="primary" onChange={handleChange} style={{marginLeft: '10%'}} >
                     <Tab label="Expresso Parque" />
                     <Tab label="horário extenso Escola Parque - Gávea)" />
                     <Tab label="Expresso Santo Inácio" />
@@ -126,6 +143,7 @@ const ServicesTab = (props) => {
                 {value === 2 && <Service content={EscolaCSI} ></Service>}
                 {value === 3 && <Service content={AfterSchool} ></Service>}
             </ContainerServices>
+}
         </>
 
     )

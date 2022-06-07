@@ -16,6 +16,7 @@ const Header = ({ page, setPage }) => {
 
   const handleMenu = (index, event) => {
     setPage(index)
+    setAnchorEl(null)
   }
 
   const handleClick = (event) => {
@@ -31,7 +32,7 @@ const Header = ({ page, setPage }) => {
       <HeaderBar />
 
       <Container>
-        <Img src={Logo} alt='logo' />
+        <Img src={Logo} alt='logo' onClick={() => setPage(0)}/>
 
         {isMobile ?
 

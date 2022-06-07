@@ -16,12 +16,12 @@ export const ImportantQuestions = () => {
         },
         {
             question: 'Quais os bairros atendidos?',
-            answer: 'Atendemos as instituições Escola Parque (Barra e Gávea, com os serviços Expresso para a unidade Gávea), Escola Americana (Barra e Gávea),  British School , além de oferecer outros serviços de transporte para eventos, passeios e ponto a ponto entre suas unidades.',
+            answer: 'Atendemos em princípio a toda Zona Sul, Barra e Recreio. Porém estamos ampliando nossas rotas para outros bairros de acordo com a necessidade dos pais e das escolas atendidas. Preencha nosso cadastro que entraremos em contato para consolidar as informações.',
             close: 'true'
         },
         {
             question: 'Quais as escolas atendidas pelo transporte escolar?',
-            answer: 'Preencha nosso formulário de solicitação marcando em "Escola" e/ou "Bairro" que não é atendido. Nossa equipe irá analisar a viabilidade de elaborar um roteiro a partir da quantidade de solicitações. Caso já exista um grupo de alunos interessados informe no campo "Observações".',
+            answer: 'Atendemos as instituições Escola Parque (Barra e Gávea, com os serviços Expresso para a unidade Gávea), Escola Americana (Gávea), Colégio Santo Agostinho, Liceu Franco Brasileiro, e Escola Alemã (passeios), além de oferecer outros serviços de transporte para eventos, passeios e ponto a ponto entre suas unidades.',
             close: 'true'
         },
         {

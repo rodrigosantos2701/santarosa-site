@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
 export const Section = styled.section`
   padding: 1em;
   background: #336933;
@@ -14,6 +16,18 @@ export const ContainerServices = styled.div`
     padding: 1% 5%;
     align-items: center;
 `;
+
+export const ContainerServicesIsMobile = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 1% 5%;
+    align-items: center;
+
+    .MuiTabs-flexContainer {
+  flex-direction: column;  
+}
+`;
+
 
 export const TitleServices = styled.text`
     font-size: 36px;
