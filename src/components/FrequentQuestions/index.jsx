@@ -16,12 +16,12 @@ export const ImportantQuestions = () => {
         },
         {
             question: 'Quais os bairros atendidos?',
-            answer: 'Atendemos em princípio a toda Zona Sul, Barra e Recreio. Porém estamos ampliando nossas rotas para outros bairros de acordo com a necessidade dos pais e das escolas atendidas. Preencha nosso cadastro que entraremos em contato para consolidar as informações.',
+            answer: 'Atendemos a toda Zona Sul e Barra. Porém estamos ampliando nossas rotas para outros bairros de acordo com a necessidade dos pais e das escolas atendidas. Preencha nosso cadastro que entraremos em contato para consolidar as informações.',
             close: 'true'
         },
         {
             question: 'Quais as escolas atendidas pelo transporte escolar?',
-            answer: 'Atendemos as instituições Escola Parque (Barra e Gávea, com os serviços Expresso para a unidade Gávea), Escola Americana (Gávea), Colégio Santo Agostinho, Liceu Franco Brasileiro, e Escola Alemã (passeios), além de oferecer outros serviços de transporte para eventos, passeios e ponto a ponto entre suas unidades.',
+            answer: 'Atendemos as instituições Escola Parque (Unidades Barra e Gávea com os serviços de rotas Expressas para a unidade Gávea), Escola Americana do Rio de Janeiro (Campos Gávea), SIS Escola Suíço- Brasileira, Colégio Santo Inácio, Escola SAP, British School (contrato) e Escola Japonesa do Rio Janeiro (contrato). Além de oferecer outros serviços de transporte para eventos e passeios.',
             close: 'true'
         },
         {

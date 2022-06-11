@@ -31,11 +31,12 @@ const tutorialSteps = [
     imgPath:
     `${Imagem2}`,
   },
-  {
-    // label: 'Bali, Indonesia',
-    imgPath:
-    `${Imagem3}`,
-  },
+  //Need change phone number on image
+  // {
+  //   // label: 'Bali, Indonesia',
+  //   imgPath:
+  //   `${Imagem3}`,
+  // },
   {
     // label: 'Bali, Indonesia',
     imgPath:

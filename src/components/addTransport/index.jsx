@@ -122,7 +122,7 @@ export const AddTransport = () => {
                 {/* RESPONSAVEL */}
 
                 <Grid container >
-                    <div style={{ display: 'flex', gap: '3px', marginTop: '15px', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
+                    <div style={{ display: 'flex', gap: isMobile? '10px':'3px', marginTop: '15px', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
                         <Grid item xs={12} lg={4} md={4}>
                             <TextField
                                 name="responsavelNome"
@@ -186,12 +186,12 @@ export const AddTransport = () => {
                 {/* DADOS ENDERECO */}
 
                 <Grid container >
-                    <div style={{ display: 'flex', gap: '3px', marginTop: '15px', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
-                        <Grid item xs={12} lg={8} md={8}>
+                    <div style={{ display: 'flex', gap: isMobile? '10px':'3px', marginTop: '15px', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
+                        <Grid item xs={12} lg={9} md={8}>
                             <TextField
                                 name="endereco"
                                 label="Endereço Completo"
-                                value={endereco.end} ß
+                                value={endereco.end} 
                                 onChange={event => setEndereco({ end: event.target.value })}
                                 fullWidth
                                 InputLabelProps={{
@@ -200,11 +200,11 @@ export const AddTransport = () => {
 
                                 variant="outlined" />
                         </Grid>
-                        <Grid item xs={12} lg={2} md={2}>
+                        <Grid item xs={12} lg={3} md={2}>
                             <TextField
                                 name="cep"
                                 label="CEP"
-                                value={endereco.cep} ß
+                                value={endereco.cep} 
                                 onChange={event => setEndereco({ cep: event.target.value })}
                                 fullWidth
                                 InputLabelProps={{
@@ -222,8 +222,8 @@ export const AddTransport = () => {
 
                 {/* OBS */}
 
-                <div style={{ display: 'flex', gap: '3px', margin: '15px 0', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
-                    <Grid item xs={12} lg={8} md={8}>
+                <div style={{ display: 'flex', gap: isMobile? '10px':'3px', margin: '15px 0', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
+                    <Grid item xs={12} lg={12} md={8}>
                         <TextField
                             name="obs"
                             label="Observações"
@@ -241,7 +241,7 @@ export const AddTransport = () => {
 
                 {/* ALUNO */}
 
-                <div style={{ display: 'flex', alignItems: 'center' }}>
+                <div style={{ display: 'flex', alignItems: 'center'  }}>
                     <div>Adicionar Aluno</div>
                     <div>
                         <IconButton onClick={addAluno}>
@@ -251,7 +251,7 @@ export const AddTransport = () => {
                 </div>
                 {aluno.map((item, index) =>
                     <Grid container >
-                        <div style={{ display: 'flex', gap: '3px', marginBottom: '20px', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
+                        <div style={{ display: 'flex', gap: isMobile? '10px':'3px', marginBottom: '20px', flexDirection: isMobile ? 'column' : 'row', width: '100%' }}>
                             <Grid item xs={12} lg={4} md={4}>
                                 <TextField
                                     name="name"
