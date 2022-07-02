@@ -11,6 +11,7 @@ import csa from "../../images/logo-CSA.svg"
 import es from "../../images/siss.jpeg"
 import br from "../../images/br.jpeg"
 import sap from "../../images/sap.jpeg"
+import jap from "../../images/jap.jpeg"
 
 
 
@@ -46,6 +47,8 @@ const Footer = () => {
       <img src={es} style={{maxWidth: '50%', marginBottom: '5px'}}/>
       <img src={br} style={{maxWidth: '100%', marginBottom: '5px', height: '150px'}}/>
       <img src={sap} style={{maxWidth: '50%', marginBottom: '5px', height: '100px'}}/>
+      <img src={jap} style={{maxWidth: '50%', marginBottom: '5px', height: '100px'}}/>
+
       </div>
 :
       <div style={{margin: '0% 0% 5% 5%'}}>
@@ -58,6 +61,7 @@ const Footer = () => {
       <img src={es} style={{maxWidth: '20%', marginRight: '10px' }}/>
       <img src={br} style={{maxWidth: '20%', marginRight: '5px', height: '150px'}}/>
       <img src={sap} style={{maxWidth: '20%', marginRight: '5px', height: '100px'}}/>
+      <img src={jap} style={{maxWidth: '20%', marginRight: '5px', height: '100px'}}/>
 
 
 

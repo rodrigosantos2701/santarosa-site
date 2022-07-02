@@ -70,7 +70,7 @@ function Questions(props) {
                                 </Grid>
                             </Grid>
                             {item.close === false ?
-                                <Typography component="p">
+                                <Typography component="p" style={{marginTop: '15px'}}>
                                     {item.answer}
                                 </Typography>
                                 : ''}

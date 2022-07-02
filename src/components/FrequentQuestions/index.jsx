@@ -16,7 +16,7 @@ export const ImportantQuestions = () => {
         },
         {
             question: 'Quais os bairros atendidos?',
-            answer: 'Atendemos a toda Zona Sul e Barra. Porém estamos ampliando nossas rotas para outros bairros de acordo com a necessidade dos pais e das escolas atendidas. Preencha nosso cadastro que entraremos em contato para consolidar as informações.',
+            answer: 'Atendemos toda a Zona Sul e Barra. Porém estamos ampliando nossas rotas para outros bairros de acordo com a necessidade dos pais e das escolas atendidas. Preencha nosso cadastro que entraremos em contato para consolidar as informações.',
             close: 'true'
         },
         {

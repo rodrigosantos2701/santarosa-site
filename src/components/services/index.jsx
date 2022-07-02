@@ -17,7 +17,7 @@ const ServicesTab = (props) => {
 
     const EscolaParque =
     {
-
+        id: 1,
         title: 'Expresso Escola Parque',
         comment: '<p><strong>Linhas exclusivas </strong>para transporte dos alunos da Escola Parque das unidades Barra e Gávea, passando pela Lagoa, Orla, Jardim Botânico e Condomínios Península e Pedra de Itaúna, localizados na Barra da Tijuca.</p>',
         icon: `${LogoEscolaParque}`,
@@ -33,7 +33,7 @@ const ServicesTab = (props) => {
 
     const HorarioExtensoEscolaParque =
     {
-
+        id:2,
         title: 'Horário Extenso Escola Parque',
         comment: '<p><strong>Linhas exclusivas </strong>para transporte dos alunos da Escola Parque. </p>',
         icon: `${LogoEscolaParque}`,
@@ -50,7 +50,7 @@ const ServicesTab = (props) => {
 
     const EscolaCSI =
     {
-
+        id:3,
         title: 'Expresso Colégio Santo Inácio',
         comment: '<p><strong>Linhas exclusivas </strong>para transporte dos alunos do Colégio Santo Inácio.</p>',
         icon: `${LogoCSI}`,
@@ -82,7 +82,7 @@ const ServicesTab = (props) => {
 
     const AfterSchool =
     {
-
+        id: 4,
         title: 'After School Escola Americana',
         comment: '<p><strong>Linhas exclusivas </strong>para transporte dos alunos da Escola Americana. </p>',
         icon: `${Earj}`,

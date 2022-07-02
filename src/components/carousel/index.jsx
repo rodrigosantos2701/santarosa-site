@@ -24,19 +24,19 @@ const tutorialSteps = [
   {
     // label: 'San Francisco – Oakland Bay Bridge, United States',
     imgPath:
-      `${Imagem1}`,
+      `${Imagem3}`,
   },
   {
     // label: 'Bird',
     imgPath:
+    `${Imagem1}`,
+  },
+  // Need change phone number on image
+  {
+    // label: 'Bali, Indonesia',
+    imgPath:
     `${Imagem2}`,
   },
-  //Need change phone number on image
-  // {
-  //   // label: 'Bali, Indonesia',
-  //   imgPath:
-  //   `${Imagem3}`,
-  // },
   {
     // label: 'Bali, Indonesia',
     imgPath:

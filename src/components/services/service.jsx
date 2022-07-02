@@ -29,7 +29,10 @@ const Service = (props) => {
                 </Paper>
             </ContainerServices>
             <ContainerServices>
-                <img src={content.icon} alt='logo' style={{width: '50%', height: '25%'}} />
+                {content.id === 4? 
+                <img src={content.icon} alt='logo' style={{width: '20%', height: '5%'}} />
+                :<img src={content.icon} alt='logo' style={{width: '50%', height: '25%'}} />
+            }
                 <TextServices dangerouslySetInnerHTML={{ __html: content.text }}></TextServices>
             </ContainerServices>
             <ContainerServices>
